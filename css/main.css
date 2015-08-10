@@ -1,0 +1,790 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+
+  ========================================================================== */
+html{
+  overflow: hidden;
+}
+body{
+  font-family:'Varela Round', sans-serif;
+  /*font-family:'Molengo', sans-serif;*/
+  color: #FFF;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow: hidden;
+}
+header a{
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+ transition: opacity 0.2s linear;
+}
+header a:hover{
+  color:#FFF;
+  opacity: 1;
+}
+.buttonTop{
+  color: #FFF;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0.7;
+  border: none;
+  transition: opacity 0.2s linear;
+  }
+.buttonTop:hover{
+  opacity: 1;
+  color: #FFF;
+}
+.buttonClass{
+  font-family: 'Varela Round', sans-serif;
+  cursor: pointer;
+  color: #056EAB;
+  border:none;
+  background-color: #FFF;
+  margin: 22em auto 7em auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  }
+.buttonClass:hover, .buttonClass:focus{
+  color: #056EAB;
+}
+  .buttonClass:after {
+    background: #1e8ecf;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+
+
+.buttonClass:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header nav{
+  float: right;
+}
+#mainContainer h1{
+  font-size: 2em;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  margin-left: 66px;
+  padding: 66px 25px 25px 25px;
+}
+#mainContainer h1.load{
+  opacity: 1;
+  transform: translateY(-50px);
+}
+#mainContainer h1 span{
+  transition: top 1s ease-in-out, transform 1s ease-in-out;
+}
+#mainContainer header{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px 0 10px 0;
+  margin-bottom: 20px;
+}
+#mainContainer{
+  height: 100%;
+  background: #1e8ecf;
+  /*background: #87D37C;*/
+  /*background: radial-gradient(#87D37C, #019875);*/
+  /*background-image: url("/img/noise.png"),-webkit-radial-gradient(50% 68%, ellipse cover,#518a6e 12%, #2b7554 60%);
+  background-image: url(../img/noise.png),-moz-radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);
+  background-image: url(../img/noise.png),-o-radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);
+  background-image: url(../img/noise.png),radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);*/
+  /*background-image: url("/img/noise.png");*/
+  /*background-color: #2b7554;*/
+background-image: -webkit-radial-gradient(50% 100%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-webkit-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
+background-image: -moz-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-moz-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
+background-image: -o-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-o-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
+background-image: -ms-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-ms-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
+background-image: radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),linear-gradient(0deg,rgb(29, 171, 169),#1a2980 90%);
+
+}
+.container{
+  height: 100vh;
+  position: relative;
+  min-height: 100%;
+}
+.container .column p{
+  font-size: 0.8em;
+  text-align: center;
+}
+#blog{
+  background-color: #1B508C;
+}
+#blog header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 15px 0 10px 0;
+    margin-bottom: 20px;
+}
+h1>span{
+  display: inline-block;
+}
+.words{
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 18s linear infinite 0s;
+  text-indent: 10px;
+  width: 350px;
+  display: inline-block;
+}
+span.words:nth-child(2){
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+span.words:nth-child(3){
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+span.words:nth-child(4){
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+span.words:nth-child(5){
+  -webkit-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  animation-delay: 9s;
+}
+span.words:nth-child(6){
+  -webkit-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+span.words:nth-child(7){
+  -webkit-animation-delay: 15s;
+  -ms-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.column button{
+  animation-delay: 0.5s;
+}
+footer {
+    clear: both;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    left:0;
+    bottom: 15px;
+    width: 100%;
+}
+footer span {
+    float: right;
+}
+.container footer abbr{
+  margin-right: 5px;
+  border: none;
+}
+.cityNames {
+    /* margin-top: 104px; */
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+}
+.cityNames li {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    /* color: rgba(20, 95, 61, 0.69); */
+    opacity: 0.4;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+    list-style: none;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.cityNames ul{
+  margin-bottom: 0;
+}
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(255, 255, 255, 0.6);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.md-content {
+	color: #fff;
+	background: #1B4F8C;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 30px;
+  list-style: none;
+  display: inline-block;
+}
+.md-content img{
+  width:32px;
+}
+
+.md-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.md-show.md-effect-19 ~ .container {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-show.md-effect-19 ~ .md-overlay {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.md-show.md-effect-19 ~ .container,
+.md-show.md-effect-19 ~ .md-overlay {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: OpenTop 0.5s forwards ease-in;
+	-moz-transform-style: preserve-3d;
+	-moz-transform-origin: 50% 100%;
+	-moz-animation: OpenTop 0.5s forwards ease-in;
+	transform-style: preserve-3d;
+	transform-origin: 50% 100%;
+	animation: OpenTop 0.5s forwards ease-in;
+}
+
+@-webkit-keyframes OpenTop {
+	50% {
+		-webkit-transform: rotateX(10deg);
+		-webkit-animation-timing-function: ease-out;
+	}
+}
+
+@-moz-keyframes OpenTop {
+	50% {
+		-moz-transform: rotateX(10deg);
+		-moz-animation-timing-function: ease-out;
+	}
+}
+
+@keyframes OpenTop {
+	50% {
+		transform: rotateX(10deg);
+		animation-timing-function: ease-out;
+	}
+}
+
+.md-effect-19 .md-content {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	opacity: 0;
+}
+
+.md-show.md-effect-19 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+	-webkit-transition: all 0.5s 0.1s;
+	-moz-transition: all 0.5s 0.1s;
+	transition: all 0.5s 0.1s;
+}
+
+/*@media screen and (max-width: 32em) {
+	body { font-size: 75%; }
+}*/
+/*#mainContainer::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
+    background: -moz-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%)
+}*/
+/*.container ::before{
+  content:"";
+}*/
+
+/*#mainContainer::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 247, 197, 0.21);
+}*/
+/*.container ::after{
+  content:"";
+
+}*/
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  {
+    #mainContainer h1 {
+    font-size: 1.5em;
+    margin-left: 0;
+}
+.md-content > div ul li {
+	padding: 5px 30px;
+  list-style: none;
+  display: inline-block;
+}
+.md-content img{
+  width:16px;
+}
+}
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 767px)
+   {
+    #mainContainer h1 {
+    font-size: 0.8em;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.cityNames li {
+   width: 42%;
+   font-size: 0.6em;
+  }
+  .container .column p {
+    font-size: 0.7em;
+  }
+  .buttonClass{
+    margin: 5em auto 5em auto;
+  }
+  .md-content > div{
+    font-size: 0.6em;
+  }
+  .md-content > div ul li {
+  	padding: 5px 30px;
+    list-style: none;
+    display: inline-block;
+  }
+  .md-content img{
+    width:16px;
+  }
+}
+@media only screen
+and (min-width:320px)
+and (max-width: 360px) {
+  .buttonTop{
+    display: none;
+  }
+  #mainContainer h1{
+    padding:0;
+    font-size: 0.7em;
+  }
+  .container .column p{
+    font-size: 0.6em;
+  }
+  .cityNames li {
+    font-size: 0.5em;
+    width: 38%;
+  }
+  .md-content > div{
+    font-size: 0.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
