@@ -137,7 +137,7 @@ header a:hover{
   color: #056EAB;
   border:none;
   background-color: #FFF;
-  margin: 22em auto 7em auto;
+  margin: 16em auto 7em auto;
   display: block;
   position: relative;
   overflow: hidden;
@@ -191,14 +191,7 @@ header nav{
 #mainContainer{
   height: 100%;
   background: #1e8ecf;
-  /*background: #87D37C;*/
-  /*background: radial-gradient(#87D37C, #019875);*/
-  /*background-image: url("/img/noise.png"),-webkit-radial-gradient(50% 68%, ellipse cover,#518a6e 12%, #2b7554 60%);
-  background-image: url(../img/noise.png),-moz-radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);
-  background-image: url(../img/noise.png),-o-radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);
-  background-image: url(../img/noise.png),radial-gradient(bottom,ellipse cover,#518a6e 10%,#2b7554 60%);*/
-  /*background-image: url("/img/noise.png");*/
-  /*background-color: #2b7554;*/
+
 background-image: -webkit-radial-gradient(50% 100%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-webkit-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
 background-image: -moz-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-moz-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
 background-image: -o-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-o-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
@@ -393,7 +386,7 @@ footer span {
 }
 .md-content {
 	color: #fff;
-	background: #1B4F8C;
+	background: #1B508C;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -424,13 +417,14 @@ footer span {
 
 .md-content > div ul {
 	margin: 0;
-	padding: 0 0 30px 20px;
+	padding: 20px 0;
+  text-align: center;
 }
 
 .md-content > div ul li {
-	padding: 5px 30px;
   list-style: none;
   display: inline-block;
+  margin: 15px;
 }
 .md-content img{
   width:32px;
@@ -442,6 +436,10 @@ footer span {
 	font-size: 0.8em;
   color: #FFF;
   border: 1px solid #FFF;
+  opacity: 0.6;
+}
+button.md-close:hover {
+    opacity: 1.0;
 }
 
 .md-show.md-effect-19 ~ .container {
@@ -508,38 +506,108 @@ footer span {
 	transition: all 0.5s 0.1s;
 }
 
-/*@media screen and (max-width: 32em) {
-	body { font-size: 75%; }
-}*/
-/*#mainContainer::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
-    background: -moz-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
-    background: -o-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%);
-    background: linear-gradient(right, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.1) 26%, rgba(0,0,0,0.35) 71%, rgba(0,0,0,0.5) 100%)
-}*/
-/*.container ::before{
-  content:"";
-}*/
+.md-content a {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: bold;
+    }
+.facebook-32, .twitter-32, .google-plus-32, .pinterest-32, .instagram-32, .mail-32, .facebook-16, .twitter-16, .google-plus-16, .instagram-16, .pinterest-16, .mail-16{
+	background: url(/img/sprites.png) no-repeat;
+}
 
-/*#mainContainer::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(200, 247, 197, 0.21);
-}*/
-/*.container ::after{
-  content:"";
+.facebook-32{
+	background-position: -56px -58px ;
+	width: 32px;
+	height: 32px;
+}
 
-}*/
+.twitter-32{
+	background-position: -108px -59px ;
+	width: 32px;
+	height: 32px;
+}
+
+.google-plus-32{
+	background-position: -157px -59px ;
+	width: 32px;
+	height: 32px;
+}
+
+.pinterest-32{
+	background-position: -207px -58px ;
+	width: 32px;
+	height: 32px;
+}
+
+.instagram-32{
+	background-position: -258px -59px ;
+	width: 32px;
+	height: 32px;
+}
+
+.mail-32{
+	background-position: -310px -60px ;
+	width: 32px;
+	height: 32px;
+}
+
+.facebook-16{
+	background-position: -68px -119px ;
+	width: 16px;
+	height: 16px;
+}
+
+.twitter-16{
+	background-position: -117px -120px ;
+	width: 16px;
+	height: 16px;
+}
+
+.google-plus-16{
+	background-position: -167px -121px ;
+	width: 16px;
+	height: 16px;
+}
+
+.instagram-16{
+	background-position: -266px -116px ;
+	width: 16px;
+	height: 16px;
+}
+
+.pinterest-16{
+	background-position: -218px -118px ;
+	width: 16px;
+	height: 16px;
+}
+
+.mail-16{
+	background-position: -318px -119px ;
+	width: 16px;
+	height: 16px;
+}
+.social-media a {
+    margin: 15px;
+    display: inline-block;
+}
+.social-media {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body#blog{
+  overflow: auto;
+}
+#blog .container .column p{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+#blog .container .column ul li{
+  font-size: 0.8em;
+}
+#blog .container .column ul{
+  margin-top: 1.5em;
+}
 
 @media only screen
   and (min-width: 768px)
@@ -550,13 +618,34 @@ footer span {
     margin-left: 0;
 }
 .md-content > div ul li {
-	padding: 5px 30px;
+	margin: 10px;
   list-style: none;
   display: inline-block;
 }
-.md-content img{
-  width:16px;
+.facebook-32{
+	background-position: -68px -119px ;
+	width: 16px;
+	height: 16px;
 }
+
+.twitter-32{
+	background-position: -117px -120px ;
+	width: 16px;
+	height: 16px;
+}
+
+.google-plus-32{
+	background-position: -167px -121px ;
+	width: 16px;
+	height: 16px;
+}
+.mail-32{
+	background-position: -318px -119px ;
+	width: 16px;
+	height: 16px;
+}
+
+
 }
 @media only screen
   and (min-width: 320px)
@@ -582,14 +671,35 @@ footer span {
     font-size: 0.6em;
   }
   .md-content > div ul li {
-  	padding: 5px 30px;
+  	margin: 10px;
     list-style: none;
     display: inline-block;
   }
-  .md-content img{
-    width:16px;
+  .facebook-32{
+  	background-position: -68px -119px ;
+  	width: 16px;
+  	height: 16px;
   }
+
+  .twitter-32{
+  	background-position: -117px -120px ;
+  	width: 16px;
+  	height: 16px;
+  }
+
+  .google-plus-32{
+  	background-position: -167px -121px ;
+  	width: 16px;
+  	height: 16px;
+  }
+  .mail-32{
+  	background-position: -318px -119px ;
+  	width: 16px;
+  	height: 16px;
+  }
+
 }
+
 @media only screen
 and (min-width:320px)
 and (max-width: 360px) {
