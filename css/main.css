@@ -196,7 +196,7 @@ background-image: -webkit-radial-gradient(50% 100%,rgba(16,47,70,0)100%,rgba(16,
 background-image: -moz-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-moz-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
 background-image: -o-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-o-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
 background-image: -ms-radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),-ms-linear-gradient(90deg,rgb(29, 171, 169),#1a2980 90%);
-background-image: radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),linear-gradient(0deg,rgb(29, 171, 169),#1a2980 90%);
+/*background-image: radial-gradient(50% 50%,rgba(16,47,70,0)100%,rgba(16,47,70,0.26)100%),linear-gradient(0deg,rgb(29, 171, 169),#1a2980 90%);*/
 
 }
 .container{
